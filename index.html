@@ -2,54 +2,85 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Drinks Ouro da Sereia</title>
-    <style>
-        body {
-            background-color: #111;
-            color: #f5f5f5;
-            font-family: Arial, sans-serif;
-            text-align: center;
-            margin: 0;
-            padding: 0;
-        }
-        header {
-            background-color: #1c1c1c;
-            padding: 20px;
-        }
-        h1 {
-            font-size: 2rem;
-            margin-bottom: 0;
-        }
-        .contact {
-            font-size: 1.5rem;
-            margin: 20px 0;
-        }
-        .gallery {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 20px;
-            padding: 20px;
-        }
-        .gallery img {
-            max-width: 300px;
-            border-radius: 10px;
-            box-shadow: 0 0 10px #000;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Drinks Ouro da Sereia</title>
+  <style>
+    body {
+      background-color: #111;
+      color: white;
+      font-family: sans-serif;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #1a1a1a;
+      padding: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+    header img.logo {
+      height: 80px;
+      border-radius: 10px;
+    }
+    .contact-info {
+      font-size: 18px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .contact-info i {
+      color: hotpink;
+    }
+    .instagram {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-top: 10px;
+    }
+    .instagram a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .instagram img {
+      width: 24px;
+      height: 24px;
+    }
+    main {
+      margin-top: 30px;
+    }
+    .drink-image {
+      width: 300px;
+      height: 400px;
+      margin: 20px auto;
+      border-radius: 10px;
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <h1>Drinks Ouro da Sereia</h1>
-    </header>
-    <div class="contact">
-        📞 Contato: <strong>71 98765-7664</strong>
+  <header>
+    <img src="drink logo preta.jpg" alt="Logo Drinks Ouro da Sereia" class="logo" />
+    <div class="contact-info">
+      <i>📞</i> Contato: <strong>71 98765-7664</strong>
     </div>
-    <div class="gallery">
-        <img src="roska.jpg" alt="Roska">
-        <img src="whisky.jpg" alt="Copão de Whisky com gelo de sabor">
+    <div class="instagram">
+      <img src="https://cdn-icons-png.flaticon.com/512/174/174855.png" alt="Instagram" />
+      <a href="https://instagram.com/drinks_da_sereia" target="_blank">@drinks_da_sereia</a>
     </div>
+  </header>
+
+  <main>
+    <div class="drink-image" style="background-color: lightblue;">
+      <p>Imagem Roska</p>
+    </div>
+    <div class="drink-image" style="background-color: burlywood;">
+      <p>Imagem Copão Whisky</p>
+    </div>
+  </main>
 </body>
 </html>
